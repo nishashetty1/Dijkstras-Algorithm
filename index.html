@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijkstra's Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>Dijkstra's Algorithm Visualizer</h1>
+        
+        <h2>Add Vertex Data</h2>
+        <input type="text" id="vertexInput" placeholder="Enter vertex name (e.g., A, B, C)">
+        <button onclick="addVertex()">Add Vertex</button>
+        
+        <h2>Add Edge</h2>
+        <input type="text" id="edgeFrom" placeholder="From vertex (e.g., A)">
+        <input type="text" id="edgeTo" placeholder="To vertex (e.g., B)">
+        <input type="number" id="edgeWeight" placeholder="Edge weight">
+        <button onclick="addEdge()">Add Edge</button>
+        
+        <h2>Run Dijkstra's Algorithm</h2>
+        <input type="text" id="startVertex" placeholder="Starting vertex (e.g., A)">
+        <button onclick="runDijkstra()">Run Dijkstra</button>
+
+        <h2>Get Distance Between Vertices</h2>
+        <input type="text" id="sourceVertex" placeholder="Source vertex (e.g., A)">
+        <input type="text" id="destinationVertex" placeholder="Destination vertex (e.g., B)">
+        <button onclick="getShortestDistance()">Get Shortest Distance</button>
+        
+        <h2>Results</h2>
+        <div id="results"></div>
+
+        <h2>Graph Visualization</h2>
+        <div id="mynetwork"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
