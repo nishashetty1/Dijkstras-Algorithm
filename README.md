@@ -35,5 +35,5 @@ This is a simple web-based visualizer for Dijkstra's Algorithm, built using AI a
    git clone https://github.com/yourusername/dijkstra-visualizer.git
 2. Open the index.html file in a web browser to start using the visualizer.
 
-##Tech Stack
+## Tech Stack
 - HTML, CSS, Js
